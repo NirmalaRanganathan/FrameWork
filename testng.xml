@@ -2,5 +2,31 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test name="Test">
+  <groups> 
+  <define name ="all">
+  <include name="reg"></include>
+  <include name="smoke"></include>
+  <include name="sanity"></include>
+  </define>
+  <define name="greens">
+  <include name="Reg"></include>
+  <include name="Sanity"></include>
+  </define>
+  <define name="one">
+  <include name="Reg"></include>
+  <include name="all"></include>
+  </define>
+  <run>
+  <include name="Reg"></include> 
+ 
+  
+  </run>
+  
+  
+  
+  </groups>
+    <classes>
+      <class name="com.fb.Employee"/>
+    </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

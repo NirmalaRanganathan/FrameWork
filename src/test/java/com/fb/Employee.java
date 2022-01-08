@@ -2,15 +2,28 @@ package com.fb;
 
 import org.testng.annotations.Test;
 
+import graphql.Assert;
+
 public class Employee {
 	
-	@Test(priority=5)
+	@Test(dependsOnGroups = {"smoke"},alwaysRun=true,groups= {"Reg"})
+	
 	private void test1() {
 
-}
-	@Test(priority=8)
+	}
+	@Test(groups = "smoke")
+	private void test2() {
+		Assert.assertTrue(false);
+
+	}
+	@Test
 	private void test3() {
 
 	}
+
+	}
 	
-}
+	
+	
+	
+

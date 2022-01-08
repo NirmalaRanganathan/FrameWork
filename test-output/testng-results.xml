@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-01-07T05:23:39Z" name="Default suite" finished-at="2022-01-07T05:23:39Z" duration-ms="69">
+  <suite name="Default suite" duration-ms="70" started-at="2022-01-08T08:24:21Z" finished-at="2022-01-08T08:24:21Z">
     <groups>
     </groups>
-    <test started-at="2022-01-07T05:23:39Z" name="Default test" finished-at="2022-01-07T05:23:39Z" duration-ms="69">
-      <class name="com.sample.A">
-        <test-method signature="Login(java.lang.String, java.lang.String)[pri:0, instance:com.sample.A@19c65cdc]" started-at="2022-01-07T05:23:39Z" name="Login" finished-at="2022-01-07T05:23:39Z" duration-ms="0" status="FAIL">
+    <test name="Default test" duration-ms="70" started-at="2022-01-08T08:24:21Z" finished-at="2022-01-08T08:24:21Z">
+      <class name="com.fb.Employee1">
+        <test-method status="FAIL" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.fb.Employee1@78c03f1f]" name="login" duration-ms="0" started-at="2022-01-08T08:24:21Z" finished-at="2022-01-08T08:24:21Z">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
-Parameter 'username' is required by @Test on method Login but has not been marked @Optional or defined
-in C:\Users\SRK\AppData\Local\Temp\testng-eclipse--736641416\testng-customsuite.xml]]>
+Parameter 'UserName' is required by @Test on method login but has not been marked @Optional or defined
+in C:\Users\SRK\AppData\Local\Temp\testng-eclipse--1806844126\testng-customsuite.xml]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.TestNGException: 
-Parameter 'username' is required by @Test on method Login but has not been marked @Optional or defined
-in C:\Users\SRK\AppData\Local\Temp\testng-eclipse--736641416\testng-customsuite.xml
+Parameter 'UserName' is required by @Test on method login but has not been marked @Optional or defined
+in C:\Users\SRK\AppData\Local\Temp\testng-eclipse--1806844126\testng-customsuite.xml
 at org.testng.internal.Parameters.createParams(Parameters.java:290)
 at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
 at org.testng.internal.Parameters.createParameters(Parameters.java:620)
@@ -39,16 +39,16 @@ at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
 at org.testng.TestNG.runSuites(TestNG.java:1049)
 at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login -->
-      </class> <!-- com.sample.A -->
+        </test-method> <!-- login -->
+      </class> <!-- com.fb.Employee1 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

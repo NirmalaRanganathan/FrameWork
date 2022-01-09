@@ -32,6 +32,8 @@ public class LoginPage extends LibGlobal {
 		type(getTxtUserName(), UserName);
 		type(getTxtpassword(), Password);
          click(getBtnLogin());
+         
+         System.out.println("dev");
 	}
 	
 	

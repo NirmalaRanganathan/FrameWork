@@ -30,7 +30,7 @@ public class LoginPage extends LibGlobal {
 	
 	private void login(String UserName,String Password) {
 		type(getTxtUserName(), UserName);
-		type(getTxtpassword(), Password);
+		type(getTxtpassword(), Password);  
          click(getBtnLogin());
          
          System.out.println("dev");
